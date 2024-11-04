@@ -6,7 +6,6 @@ import ListEmployeeComponent from './components/ListEmployeeComponent'
 import ListDepartmentComponent from './components/ListDepartmentComponent'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import DepartmentComponent from './components/DepartmentComponent'
-import Test from './components/test'
 
 function App() {
 
@@ -30,8 +29,6 @@ function App() {
               <Route path='/add-department' element = { <DepartmentComponent />}  />
 
               <Route path="/edit-department/:id" element={<DepartmentComponent />} />
-
-              <Route path='/test' element = { <Test /> } />
 
           </Routes>
         <FooterComponent />
