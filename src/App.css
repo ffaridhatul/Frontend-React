@@ -1,0 +1,104 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  height: 50px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  }
+
+  body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #2c3e50, #34495e); /* Gradasi dari warna gelap ke lebih terang */
+  color: #ffffff; /* Ubah teks menjadi putih agar kontras dengan background gelap */
+}
+
+.custom-class {
+  color: white; /* Mengubah semua elemen h2 menjadi putih */
+  padding: 20px;
+
+}
+
+.custom-table-padding th, .custom-table-padding td {
+  padding: 15px; /* Atur padding sesuai kebutuhan */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #1a252f;
+  padding: 1rem;
+}
+
+.navbar-brand {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+  padding-left: 75px;
+}
+
+.navbar-brand:hover {
+  color: #ffc107; /* Highlight on hover */
+}
+
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative; /* Needed for underline animation */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover Effect with Underline Animation */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px; /* Position underline slightly below the text */
+  left: 0;
+  background-color: #ffc107; /* Color of underline */
+  transition: width 0.3s ease; /* Smooth underline animation */
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Expand underline on hover */
+}
+
+.nav-link:hover {
+  color: #ffc107; /* Change text color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    padding-left: 0; /* Remove bullet points */
+    list-style-type: none; /* Remove bullet points in mobile view */
+  }
+
+  .nav-item {
+    margin-bottom: 1rem;
+    display: block; /* Stack items vertically on small screens */
+    list-style-type: none; /* Remove bullet points in mobile view */
+    padding-left: 0; 
+  }
+}
